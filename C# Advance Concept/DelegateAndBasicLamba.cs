@@ -20,7 +20,7 @@ namespace C__Advance_Concept
             //it enables a TYPE of parameter as a PARAMETER
         }
 
-        static void Main(string[] args)
+        static void s(string[] args)
         {
             MathOp a = Sub;
             a = Add;
