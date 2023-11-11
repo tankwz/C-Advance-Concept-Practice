@@ -18,6 +18,8 @@ namespace C__Advance_Concept
 
             //generic  enable us to pass in a type to a function like a parameter to a function
             //it enables a TYPE of parameter as a PARAMETER
+            //dependency injection is register certain classes which provide certain logics, like database access, you can register these classes on a central location, like you can just say this class is responsive for database access and everybody else in the entire application just need to say i need database access and it will get the register class automatically without you having to create the neccessary class manually
+            //so you're centralizing a kind of registry which classes are responsive to which topic and you do that centrally in one location and then everybody else if they need any helper class to something they just say i need this helper class and they get it from the central registry  
         }
 
         static void s(string[] args)
