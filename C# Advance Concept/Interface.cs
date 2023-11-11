@@ -22,7 +22,7 @@ namespace C__Advance_Concept
                         
                         ;
                     break;
-                case 1:
+               
 
             }
             
@@ -32,6 +32,49 @@ namespace C__Advance_Concept
         }
 
 
+        public interface IMyInterface
+        {
+            void Hi(string name);
+            void TestFunction();
+        }
+        public class MyClass : IMyInterface
+        {
+            public void Hi(string name)
+            {
+                Console.WriteLine("Hi " + name);
+            }
+
+            public void TestFunction()
+            {
+                Console.WriteLine("MyClass.TestFunction");
+            }
+        }
+        public class MySecondClass : IMyInterface
+        {
+            public void Hi(string name)
+            {
+                Console.WriteLine("Hello "+ name);
+            }
+
+            public void TestFunction()
+            {
+                
+            }
+        }
+        private static void TestInterface(IMyInterface myInterface, string name)
+        {
+           
+            myInterface.TestFunction();
+            myInterface.Hi(name);
+        }
+        public static void Main(string[] args)
+        {
+           MyClass myclass = new MyClass();
+           MySecondClass mySecondClass = new MySecondClass();
+            TestInterface(myclass,"tan");
+            TestInterface(mySecondClass, "tan");
+
+        }
 
     }
 }

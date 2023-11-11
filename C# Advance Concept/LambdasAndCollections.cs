@@ -12,8 +12,7 @@ namespace C__Advance_Concept
         record Hero(string Name, string HeroClass, int str);
      //   delegate bool Filtder<T>(T h);
 
-
-        public static void Main(string[] args) {
+        public static void asd(string[] args) {
             IEnumerable<T> Filter<T>(IEnumerable<T> items, Func<T, bool> f)
             {
                 foreach (var item in items)
@@ -42,8 +41,5 @@ namespace C__Advance_Concept
 
             Console.WriteLine(a);
         }
-
-
-
     }
 }
