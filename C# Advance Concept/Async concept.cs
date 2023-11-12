@@ -60,8 +60,8 @@ namespace C__Advance_Concept
             "and the user will see a loading icon (that we have to set up manually) and they will be happy"
             
             ;
-            //we only have a single core, we can not do parallel caculation but TASKS ARE NOT CPU BOUND for that reason we can do them in parallel with a single thread
-            //"for C# server, they support both parallel and aysnc " +
+            //we only have a single core, we can not do parallel calculation but TASKS ARE NOT CPU BOUND for that reason we can do them in parallel with a single thread
+            //"for C# server, they support both parallel and async " +
 
             string definitionOnSERVERLevel = "" +
             "let's we have a server with 2 cpu" +
@@ -72,7 +72,7 @@ namespace C__Advance_Concept
             "so typically, you'd try to keep the thread pool small, not too small otherwise you would have to put in a lot of memory" +
             
             "so in our case, we will have 2 thread, equal with our cpu, " +
-            "each hppt request is assigned an IDLE THREAD IN THE THREAD POOL" +
+            "each http request is assigned an IDLE THREAD IN THE THREAD POOL" +
             "so our cat video http request will TAKE UP ONE THREAD in out thread pool" +
             "now after a bit of processing, it finds out it need to get the cat video from the database/disk and that cat video gonna take a lot of time to get" +
             
@@ -81,7 +81,7 @@ namespace C__Advance_Concept
             "so if ANOTHER CLIENT NEED TO SEE THAT CAT VIDEO and that thread still processing, we gonna need our second thread in the thread pool to do the same" +
             "and then THERE IS ANOTHER, AND ANOTHER, AND ANOTHER and what will happen is the server gonna start more and more thread, " +
             "and schedule those threads on our poor 2 cpus, and them threads gonna keep waiting and waiting and our cpus got overloaded" +
-            "but those threads that holding the cpu hostage don't really do anything, they just idle, they just BLOCKING the cpuj , and like we said earler" +
+            "but those threads that holding the cpu hostage don't really do anything, they just idle, they just BLOCKING the cpu , and like we said earlier" +
             "every thread that the operating system creates uses a lot of resources, and that sounds bad, like really baddddddddddddddddddddddddddddddddddddd" +
             //SO THIS IS WHERE WE HAVE TO CHANGE OUR WAY OF PROGRAMMING
             "we have to change our approach to ASYNCHRONOUS programming even on the server" +
@@ -97,18 +97,22 @@ namespace C__Advance_Concept
             
             "the different between parallel in this is in parallel programming, we gonna use another thread to do that but here we only need to use that single thread" +
             "asynchronous programming is always used when you do any kind of non cpu-bound work, like accessing a database, a file server, a network..."
-
-
             ;
-
-
 
             /*
              
-
-             
              */
+            string soHowExactlyItWorks = "" +
+            "You see, because it's async, it not gonna start immediately, it fire up a task to schedule the rest of its code, then it will run when the task completed" +
+            "and we do it with async-await, you basically return a Task< of Whatever it normally return here> then add the async keyword, " +
+            "then inside the function, at the line of the async code, you add await, that await will signal the thread that this is an async task" +
+            "that await will NOT blocking the thread, that await tells c# if you have anything else to do, do it but when the task behind it done" +
+            "you come back and continue from here, downward" +
+            "and it will not continue from here instead it will do other thing and only when the task is done, it come back with the result from that await line" +
+            "and continue from there"
 
+            //so asynchronous programming is all about efficiently utilizing resources during the waiting periods of tasks like I/O operations.
+                ;
 
 
 
