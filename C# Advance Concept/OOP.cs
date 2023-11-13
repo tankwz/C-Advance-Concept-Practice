@@ -13,9 +13,9 @@ namespace C__Advance_Concept
             string BasicConcepts = "" +
                 "So, to start with object oriented we must understand what is an object, and what is oriented is about" +
                 "OBJECT IS A THING IN A REAL WORLD is that chair, that table, you, me anything could be an object" +
-                "so, what is oriented mean, oriente means to direct something towards something" +
-                "so the first thing is our code, or program, we direct it towards our object" +
-                "so it basically mean programming focus on the object, the object here is a thing that our software interest in" +
+                "so, what is oriented mean, orient means to direct something towards something" +
+                "we direct our program towards our object" +
+                "so it basically means programming focus on the object, the object here is a thing that our software interest in" +
                 "it's the thing we want to store and process its data" +
                 "it's an ENTITY" +
                 "that is the meaning of object oriented in general";
@@ -34,11 +34,14 @@ namespace C__Advance_Concept
                 "so inside that employee, we create 2 more private complex function " +
                 "that do the validate name, address for that employee and call it inside the validate() function" +
                 "and so we can use that validation() function inside that class without needing to know how exactly they work " +
-                "using and understanding an object with few property and method is easier than an object with serveral property and method" +
+                "using and understanding an object with few property and method is easier than an object with several property and method" +
                 //
-                "abstraction happens during the design phase, and encapsulation happens during execution phase, " +
+                "abstraction happens during the design phase, where you design what is public, what is shown to the outside, " +
+                "and what is not, " +
+                "encapsulation happens during execution phase, during the implementation phase" +
+                "where the developer use the private/public/proteced... the access modifier to complete that abstraction of the design " +
+
                 "encapsulation is used to to implement abstraction" +
-                "encapsulation implement abstraction" +
                 "" +
                 "encapsulation and abstraction complement each other";
 
@@ -46,18 +49,19 @@ namespace C__Advance_Concept
 
             //
 
-            //the next two is inhertitance and polumorphism
+            //            the next two is inheritance and polymorphism
+
             string Inheritance_Polymorphism = " " +
                 "Poly mean many, morph means form, so the word basically mean Many Form, " +
                 "It means an object can act differently under different condition" +
 
                 "As for 'Inheritance,' the word means receiving properties from another object. " +
                 "It's a thing in object-oriented programming where a class can inherit the properties and behaviors of another class, " +
-                "promoting code reusability. " +
+                "it helps promoting code reusability. " +
                 "For example, a 'Manager' class inheriting from an 'Employee' class would inherit common attributes like 'name' and 'address'" +
                 " while having its own unique properties and methods like Management() or Manager id." +
 
-                "And they are both Eomployee but act differently" +
+                "And they are both Employee but act differently" +
                 "In this case, the employee is called an abstract class" +
 
                 "The concept of Inheritance and Polymorphism helps reduce repetitive code " +
