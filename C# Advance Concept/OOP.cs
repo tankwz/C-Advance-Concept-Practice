@@ -26,36 +26,60 @@ namespace C__Advance_Concept
             // a class is a blueprint, a class is a type, and we create an object from a class, an object is an instance of a class 
 
             string Abstraction_Encapsulation = "" +
-                "the word abstraction means simplify reality, it means displaying only essential information, what is necessary" +
-                "encapsulation is group related variable and function that operate on them into an object, and hide complexity" +
+                "the word Abstraction means simplify reality, it means displaying only essential information, what is necessary" +
+                "the word Encapsulation enclosing something within a single unit, a single structure, " +
+                "it means group related variable and function that operate on them into an object, and hide complexity" +
 
-                "let say you have an employee class, we have the name and address public, and a function call validate() to validate the identity of that employee" +
+                "let's say you have an employee class, we have the name and address public, and a function call validate() to validate the identity of that employee" +
                 "so inside that employee, we create 2 more private complex function " +
                 "that do the validate name, address for that employee and call it inside the validate() function" +
                 "and so we can use that validation() function inside that class without needing to know how exactly they work " +
+                "using and understanding an object with few property and method is easier than an object with serveral property and method" +
                 //
-                "abstraction happens during the design phase, and during execution phase, " +
+                "abstraction happens during the design phase, and encapsulation happens during execution phase, " +
                 "encapsulation is used to to implement abstraction" +
                 "encapsulation implement abstraction" +
                 "" +
-                "encapsulation and abstraction complement each other"+ 
+                "encapsulation and abstraction complement each other";
 
-                //
-                "for example, a person can be represented as an object in a program. " +
+            // we basically ENCAPSULATE an object then only show the interface, the ABSTRACTION of it
+
+            //
+
+            //the next two is inhertitance and polumorphism
+            string Inheritance_Polymorphism = " " +
+                "Poly mean many, morph means form, so the word basically mean Many Form, " +
+                "It means an object can act differently under different condition" +
+
+                "As for 'Inheritance,' the word means receiving properties from another object. " +
+                "It's a thing in object-oriented programming where a class can inherit the properties and behaviors of another class, " +
+                "promoting code reusability. " +
+                "For example, a 'Manager' class inheriting from an 'Employee' class would inherit common attributes like 'name' and 'address'" +
+                " while having its own unique properties and methods like Management() or Manager id." +
+
+                "And they are both Eomployee but act differently" +
+                "In this case, the employee is called an abstract class" +
+
+                "The concept of Inheritance and Polymorphism helps reduce repetitive code " +
+                "by allowing for the reuse of existing code and structuring classes in a parent-child relationship. ";
+
+
+
+    //In summary, while encapsulation and abstraction focus on organizing and simplifying,
+    //inheritance and polymorphism contribute to the flexibility and extensibility of object-oriented systems."
+
+    ;
+
+
+
+            /*
+            
+                            "for example, a person can be represented as an object in a program. " +
                 "We don't need to know all the details about a person, " +
                 "like their blood type, their biological processes, their personal life etc... " +
                 "Instead, we focus on the essential attributes and behaviors that define a person in the context of our software"
                 ;
 
-            string polymorphism = " " +
-                "object can act differently under different condition"
-                ;
-
-            string inheritance = " " +
-                ""
-                ;
-            /*
-             
            "In the world of object-oriented programming, abstraction allows us to model real-world entities by capturing their essential characteristics and interactions. 
             It helps us create a simplified representation of complex systems, making it easier to understand and work with."
 
