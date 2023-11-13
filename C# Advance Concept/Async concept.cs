@@ -47,7 +47,7 @@ namespace C__Advance_Concept
             "and so the application is frozen for the entire time, it doesn't respond to the user input at all"+
             "and we know the user is generally stupid, and they will get mad at you because they think the app not working,"+
             "or they're know we're stupid and doing bad blocking code (which actually true)" +
-            "we don't want neither of that, cuz we want the user to be happy, if the user is happy, our boss will be happy and we will get a raise (hopefully)" +
+            "we don't want neither of that, cuz we want the user to be happy, idf the user is happy, our boss will be happy and we will get a raise (hopefully)" +
             
             //AND SAME IS PARTLY TRUE FOR THE SERVER
 
